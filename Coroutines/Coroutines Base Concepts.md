@@ -1,4 +1,7 @@
+ 
+ 
  # Coroutine
+
  ```
  IEnumerator Move()
     {
@@ -8,18 +11,21 @@
             yield return new WaitForSeconds(0.5f);
         }
     }
-    ```
-    When this simple coroutine function is attached to an gameObject and executed, the gameobject will move on the Xaxis once, then 
-    ```yield return new WaitForSecond()``` will be executed waiting a 0.5 seconds. 
-    Then the function will go back in the loop for the second loop and it will move again the gameObject.
-    That will repeat 10 times.
+ ```
 
-    WaitForSeconds points the ability to "pause" the execution of the process and return control to Unity but then to continue where it left off the following frame.
 
-    Coroutine exectuion:
+  
+ When this simple coroutine function is attached to an gameObject and executed, the gameobject will move on the Xaxis once, then 
+ ```yield return new WaitForSecond()``` will be executed waiting a 0.5 seconds. 
+ Then the function will go back in the loop for the second loop and it will move again the gameObject.
+ That will repeat 10 times.
 
-    ```
-    using UnityEngine;
+ WaitForSeconds points the ability to "pause" the execution of the process and return control to Unity but then to continue where it left off the following frame.
+
+ Coroutine exectuion:
+
+```
+using UnityEngine;
 using System.Collections;
 
 // In this example we show how to invoke a coroutine and
