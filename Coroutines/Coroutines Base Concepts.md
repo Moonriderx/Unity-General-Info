@@ -63,42 +63,42 @@ public class ExampleClass : MonoBehaviour
         }
     }
 }
-    ```
+```
 
-    This is the example taken directly from the unity documentation.
-    It shows how the coroutine execution handles.
-    We must use "StartCoroutine" method.
+This is the example taken directly from the unity documentation.
+It shows how the coroutine execution handles.
+We must use "StartCoroutine" method.
     
-    // Modify the example if you will use it for learning purposes
+// Modify the example if you will use it for learning purposes
 
-    StartCoroutine returns a class Coroutine
-    We can use it like this 
+StartCoroutine returns a class Coroutine
+We can use it like this 
 
-    var coroutine = StartCoroutine(Move());
-    StopCoroutine(coroutine);
+var coroutine = StartCoroutine(Move());
+StopCoroutine(coroutine);
 
-    This way we are terminating the execution of the coroutine Move();
+This way we are terminating the execution of the coroutine Move();
 
-    In the bigger projects is good practice to use a gameObject specially for coroutines handling.
-    Something like Coroutine Manager.
+In the bigger projects is good practice to use a gameObject specially for coroutines handling.
+Something like Coroutine Manager.
 
-    We can also pass a paramether in the coroutine.
+We can also pass a paramether in the coroutine.
 
-    ```
-    IEnumerator TestCoroutime(string randomString) {
+```
+IEnumerator TestCoroutime(string randomString) {
 
-        Debug.Log("Start" + randomString);
-        yield return new WaitForSeconds(10);
-        Debug.Log("End");
+    Debug.Log("Start" + randomString);
+    yield return new WaitForSeconds(10);
+    Debug.Log("End");
 
-    }
-    ```
+}
+```
 
-    That way, the parameter will live in the life time of the execution of the coroutine.
+That way, the parameter will live in the life time of the execution of the coroutine.
 
 
 
-    Another most common usage of the coroutines is downloading a textures / sprites or making a connection to a web server.
+Another most common usage of the coroutines is downloading a textures / sprites or making a connection to a web server.
 
-    (Unity Web Request) (add more info to the topic above)
+(Unity Web Request) (add more info to the topic above)
 
