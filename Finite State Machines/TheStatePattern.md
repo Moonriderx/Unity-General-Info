@@ -21,3 +21,11 @@ To work with the state pattern we are going to have a **class** that is going to
 
 That will be the **engine** (motor) that drives the **state changes** and keep track of which state is the **current state** and which state will be executed.
 
+Inside of our state machine, we will have a **series of states**. They will provide a different functions for each state.
+We want to know what the current state is any point of time. We will want to change the state on a different conditions.
+
+If we have a player for an example, we could have a **running** state, an **idle** state an **dead** state, etc...
+
+Each of this states applied to the **player** can show a different animations for example or handle a more complex logic. The system is very modular. We can get almost anything different states like **bosses** that have to change their attack pattern on a different conditions.
+
+Each of the states has **own isolated behavior**.
