@@ -14,3 +14,10 @@ There are lots of difference permutations of this pattern. We can use simple **s
 **class-state** pattern.
 
 So to summarize, if we have an object that changes its behavior at different points of the game, we probably want to use this particular pattern.
+
+From the image 1 we can see what the state patterns look from a high level of abstraction.
+
+To work with the state pattern we are going to have a **class** that is going to function as a **state machine**
+
+That will be the **engine** (motor) that drives the **state changes** and keep track of which state is the **current state** and which state will be executed.
+
